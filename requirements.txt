@@ -1,0 +1,4 @@
+random
+discord
+os
+dotenv
