@@ -55,7 +55,7 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, chance:
             await m.kick(reason="Lost the Russian roulette")
             kicked.append(m)
         except Exception as e:
-            print(f"Failed to kick {m}: {e}")
+print(f"Kick failed for {m}: {e}")
             failed.append(m)
 
     msg = f"💀 {len(kicked)} member(s) were kicked from {role.mention}.\n"
