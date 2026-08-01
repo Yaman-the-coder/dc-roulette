@@ -44,16 +44,16 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, chance:
     unlucky = [m for m in members if random.randint(1, chance) == 1]
 
     if not unlucky:
-        await interaction.followup.send(f"🎲 No one was kicked this time! Lucky!", ephemeral=False)
+        await interaction.followup.send(f"🎲 No one was out this time! Lucky!", ephemeral=False)
         return
 
-    kicked = []
+    out = []
     failed = []
 
     for m in unlucky:
         try:
             await m.kick(reason="Lost the Russian roulette")
-            kicked.append(m)
+            out.append(m)
 print(f"Kick failed for {m.name}: {e}")
         except Exception as e:
 print(f"Kick failed for {m}: {e}")
