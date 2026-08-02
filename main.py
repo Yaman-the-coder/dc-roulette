@@ -18,6 +18,7 @@ intents.guilds = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
+# This runs when the bot starts up
 async def on_ready():
 print(f"Bot online as {bot.user}")
     try:
