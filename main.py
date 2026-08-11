@@ -46,7 +46,7 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, chance:
         await interaction.followup.send("No non-bot members found in that role.", ephemeral=True)
         return
 
-    print(f"Members found: {len(members)}")
+print(f"Found {len(members)} members")
     unlucky = [m for m in members if random.randint(1, chance) == 1]
 
     if not unlucky:
