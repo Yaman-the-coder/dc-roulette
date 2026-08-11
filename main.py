@@ -21,6 +21,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # This runs when the bot starts up
 print("Registering on_ready event handler")
 print("Initializing on_ready event")
+print("Loading on_ready handler")
 async def on_ready():
 print(f"Bot online as {bot.user}")
     try:
