@@ -23,6 +23,7 @@ print("Registering on_ready event handler")
 print("Initializing on_ready event")
 print("Loading on_ready handler")
 print("Bot is ready")
+# this runs when the bot is ready and connected
 async def on_ready():
 print(f"Bot online as {bot.user}")
     try:
